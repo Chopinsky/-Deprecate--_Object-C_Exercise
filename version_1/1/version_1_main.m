@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-#import "Student.h"
+#import "version_1_Student.h"
 
 void greet(Student *s);
 
-int main(int argc, const char * argv[])
+int version_1_main(int argc, const char * argv[])
 {
     @autoreleasepool {
+        
+        // Selectors: alloc; age/setAge:...; init/initWithName:...;
         
         //Student *alice = [Student alloc];
         //[alice setAge: 20];
@@ -38,8 +40,8 @@ int main(int argc, const char * argv[])
         Student *Joe = [[Student alloc] init];
         greet(Joe);
         
-        //using mutable array methods to initialize data:
-        NSMutableArray *students = [[NSMutableArray alloc] init];
+        //using mutable array methods and collection classes to initialize data:
+        NSMutableArray *students = [[NSMutableArray alloc] init]; // standard initialization methods for collection classes.
         
         [students addObject:[[Student alloc] initWithName:@"Leah" andAge:20]];
         [students addObject:[[Student alloc] initWithName:@"Jason" andAge:22]];
