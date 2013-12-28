@@ -11,7 +11,13 @@
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
+        NSArray *names = [NSArray arrayWithObjects:@"Alice", @"Bob", nil];
         
+        for (NSString *name in names)
+        {
+            NSLog(@"Hello, %@.", name);
+        }
     }
+    return 0;
 }
 
