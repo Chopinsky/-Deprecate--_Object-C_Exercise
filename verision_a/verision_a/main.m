@@ -45,6 +45,8 @@ int main(int argc, const char * argv[])
         
         [students addObject:[[Student alloc] initWithName:@"Leah" andAge:20]];
         [students addObject:[[Student alloc] initWithName:@"Jason" andAge:22]];
+        [students addObject:alice];  // in this case, the objects that already exists are added to the mutable array "students".
+        [students addObject:bob];
         
         for(Student *s in students)
             greet(s);
