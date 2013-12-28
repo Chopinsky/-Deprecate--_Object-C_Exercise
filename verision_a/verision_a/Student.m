@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "version_1_Student.h"
+#import "Student.h"
 
 @implementation Student
 

@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "version_1_Student.h"
+#import "Student.h"
 
 void greet(Student *s);
 
-int version_1_main(int argc, const char * argv[])
+int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         
