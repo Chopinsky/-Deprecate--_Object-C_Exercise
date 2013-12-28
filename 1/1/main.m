@@ -37,6 +37,15 @@ int main(int argc, const char * argv[])
         
         Student *Joe = [[Student alloc] init];
         greet(Joe);
+        
+        //using mutable array methods to initialize data:
+        NSMutableArray *students = [[NSMutableArray alloc] init];
+        
+        [students addObject:[[Student alloc] initWithName:@"Leah" andAge:20]];
+        [students addObject:[[Student alloc] initWithName:@"Jason" andAge:22]];
+        
+        for(Student *s in students)
+            greet(s);
     }
     return 0;
 }
