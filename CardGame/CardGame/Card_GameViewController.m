@@ -14,16 +14,20 @@
 
 @implementation Card_GameViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning
+- (IBAction)touchCardButton:(UIButton *)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *randomCard = [NSString stringWithFormat:@"%d%@", arc4random() % 13, @"Heart"];
+    
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"white"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    } else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        [sender setTitle:randomCard forState:UIControlStateNormal];
+    }
+    
+    
 }
 
 @end
