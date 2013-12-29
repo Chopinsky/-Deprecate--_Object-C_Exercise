@@ -130,7 +130,7 @@
 				C2EA6A76186F92E100A75F7E /* Card_GameViewController.h */,
 				C2EA6A77186F92E100A75F7E /* Card_GameViewController.m */,
 				C2EA6A79186F92E100A75F7E /* Images.xcassets */,
-				C2EA6AA2186F942E00A75F7E /* Cards */,
+				C2EA6AA2186F942E00A75F7E /* Cards_class */,
 				C2EA6A68186F92E100A75F7E /* Supporting Files */,
 			);
 			path = CardGame;
@@ -165,7 +165,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C2EA6AA2186F942E00A75F7E /* Cards */ = {
+		C2EA6AA2186F942E00A75F7E /* Cards_class */ = {
 			isa = PBXGroup;
 			children = (
 				C2EA6A96186F942500A75F7E /* Card.h */,
@@ -177,8 +177,9 @@
 				C2EA6A9C186F942500A75F7E /* PlayingCardDeck.h */,
 				C2EA6A9D186F942500A75F7E /* PlayingCardDeck.m */,
 			);
-			name = Cards;
-			sourceTree = "<group>";
+			name = Cards_class;
+			path = CardGame;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
